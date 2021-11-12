@@ -1059,6 +1059,15 @@ function onScroll(event){
     });
 }
 
+$('.book-visit').click(function() {
+  $('.media__form').fadeIn();
+  $(this).fadeOut();
+})
+
+$('.close-btn').click(function() {
+  $('.media__form').fadeOut();
+  $('.book-visit').fadeIn();
+})
 
 
   })();

@@ -140,6 +140,11 @@
 }
 
 @media only screen and (max-width: 991px) {
+
+  .header__menu-button{
+    display: flex;
+  }
+
   .article-listing-item {
     display: block;
   }
@@ -861,7 +866,7 @@
   }
 
   .zoom-image-head__title {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 30px;
   }
 
