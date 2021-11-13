@@ -5669,7 +5669,7 @@ project-block
 */
 
 .project-block {
-  padding-top: 180px;
+  padding-bottom: 20px;
 }
 
 .project-block__item {
@@ -8469,6 +8469,7 @@ zoom-slider
   padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;
+  background-repeat: no-repeat;
 }
 
 .zoom-slider__buttons {
@@ -8648,11 +8649,11 @@ zoom-slider
 }
 
 .intro {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .img-wrapper + .team-block__person-name{
-  padding: 30px 0 50px 0;
+  padding: 30px 0 0px 0;
   font-family: 'Teko', Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 32px;
@@ -8662,6 +8663,12 @@ span.location {
   display: block;
   padding-top: 5px;
   color: #999;
+}
+
+span.project-num {
+  font-size: 14px;
+  color: #999;
+  font-weight: normal;
 }
 
 .img-wrapper img {
@@ -8674,6 +8681,11 @@ span.location {
 
 .description {
   text-align: left;
+}
+
+.description ul {
+  list-style-type: square;
+  padding-left: 15px;
 }
 
 .btn-more {
@@ -8749,7 +8761,13 @@ span.location {
   color: #ffffff;
 }
 
+.project-block {
+  padding-bottom: 50px;
+}
 
+.upcoming-projects {
+  justify-content: center;
+}
 
 
 @media only screen and (max-width: 1440px) {

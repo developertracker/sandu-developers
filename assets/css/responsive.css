@@ -8,12 +8,27 @@
     padding-right: 60px;
     padding-left: 60px;
   }
+  .about-section .zoom-image-head__content {
+    padding-left: 10%;
+  }
+
 }
 
 @media only screen and (max-width: 1629px) {
   .cards__item-inner {
     padding: 35px 35px;
   }
+
+  .about-section .zoom-image-head__content {
+    padding-left: 25%;
+  }
+
+  .zoom-slider__slide {
+    height: 485px;
+    background-size: contain;
+    background-position: bottom;
+  }
+  
 }
 
 @media only screen and (max-width: 1439px) {
@@ -872,5 +887,9 @@
 
   .zoom-image-head__text {
     font-size: 16px;
+  }
+
+  .about-section .zoom-image-head__content {
+    padding-left: 15px;
   }
 }
