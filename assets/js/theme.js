@@ -1038,16 +1038,17 @@
           'scrollTop': $target.offset().top - headerHeight +30
       }, 1000, 'swing', function () {
           window.location.hash = '';
-          $(document).on("scroll", onScroll);
 
       });
   });
+  $(document).on("scroll", onScroll);
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
     $('.top-menu__menu-item a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
+        console.log(refElement2)
         var headerHeight = $('.header__container').height();
         if (refElement.position().top - headerHeight <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('.top-menu__menu-link').removeClass("active");
@@ -1067,6 +1068,15 @@ $('.book-visit').click(function() {
 $('.close-btn').click(function() {
   $('.media__form').fadeOut();
   $('.book-visit').fadeIn();
+})
+
+$('.enquiry-btn').click(function(e) {
+  e.preventDefault();
+  $('.modal-popup, .modal-bg').fadeIn();
+})
+
+$('.close-btn1').click(function() {
+  $('.modal-popup, .modal-bg').fadeOut();
 })
 
 
