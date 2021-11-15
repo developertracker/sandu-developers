@@ -24,9 +24,7 @@
   }
 
   #projects .zoom-slider__slide {
-    height: 485px;
-    background-size: contain;
-    background-position: bottom;
+    height: 482px;
   }
   
 }
