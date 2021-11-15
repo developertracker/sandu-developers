@@ -85,6 +85,8 @@
               </div>
             </li>
           </ul>
+          <div class="enquire-now"><span class="enquiry-btn">Enquire Now</span></div>
+
         </div>
       </div>
     </div>
@@ -117,6 +119,8 @@
             <a class="menu-panel__menu-link collapsed collapsed" data-toggle="collapse" href="index.html#contact">CONTACT US</a>
     
           </div>
+          <div class="enquire-now"><span class="enquiry-btn">Enquire Now</span></div>
+
         </div>
         <div class="menu-panel__footer">
           <div class="socials menu-panel__socials">
@@ -229,6 +233,19 @@
           <p>022 61402200</p>
         </div>
         <div class="footer-studio__column col-12 col-sm-6">
+
+          <ul class="footer-studio__list">
+            <li class="footer-studio__list-item">
+              <a class="footer-studio__list-link" href="#">Careers</a> &nbsp;|
+            </li>
+            <li class="footer-studio__list-item">
+              <a class="footer-studio__list-link" href="#">Privacy policy</a>  &nbsp;|
+            </li>
+            <li class="footer-studio__list-item">
+              <a class="footer-studio__list-link" href="#">Disclaimer</a>
+            </li>
+          </ul>
+
           <div class="footer-studio__copyright">© 2021
             <strong>Sandu Developers.</strong>
             All Rights Reserved.
@@ -247,10 +264,52 @@
               <div class="visually-hidden">Youtube </div>
             </a>
           </div>
+
+          <div class="footer-studio__form">
+            <div class="footer-studio__group-title">Let's connect</div>
+
+            <form name="connect" id="connect">
+                <input type="text" required placeholder="Name" class="footer-studio__input">
+                <input type="email" required placeholder="Email Id" class="footer-studio__input">
+                <button class="footer-studio__submit">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+         <!---Enquiry Form-->
+         <div class="modal-popup">
+           <div class="modal-header">
+            <div class="footer-studio__group-title">Enquire Now</div>
+            <div class="close-btn1"> 
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+              </svg> 
+            </div>
+           </div>
+        
+           <div class="modal-body">
+          <form method="POST" action="thank-you.php" name="enquiry__form" class="enquiry__form">
+            <fieldset>
+                <label>Name:</label>
+                <input type="name" name="name" id="name"  required> 
+            </fieldset>
+            <fieldset>
+                <label>Email:</label>
+                <input type="email" name="email" id="email"  required> 
+            </fieldset>
+            <fieldset>
+                <label>Phone:</label>
+                <input type="text" name="phone" id="phone" maxlength="10" required onkeyup="this.value=this.value.replace(/[^\d]/,'')"> 
+            </fieldset>
+            <fieldset class="form-actions">
+                <button type="submit" name="submit" id="submit">Submit</button>
+            </fieldset>
+        </form>
+        </div>
+         </div>
+         <div class="modal-bg"></div>
 </div>
 <!--JS-->
 <script src="assets/js/polyfill.min.js"></script>
